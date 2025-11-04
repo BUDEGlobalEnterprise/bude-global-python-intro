@@ -7,8 +7,8 @@
         "slides": [
           {
             "type": "title",
-            "title": "Bude Global OSS",
-            "subtitle": "Introduction to <br> Open Source Software"
+            "title": "Introduction to Python",
+            "subtitle": "From Zero to Hero <br> Building Real-World Applications"
           }
         ]
       },
@@ -19,803 +19,1017 @@
           {
             "type": "presenter",
             "name": "Aravind Govindhasamy",
-            "title": "Founder of BUDE",
-            "experience": "Software Developer for 3 years",
-            "oss_experience": "Open Source maintainer since 2024",
+            "title": "Software Developer",
+            "experience": "3 years in .NET, Python, IoT & RFID",
+            "oss_experience": "Backend Development & Automation Specialist",
             "github": "https://github.com/aravind-govindhasamy",
             "website": "https://aravind-govindhasamy.github.io"
           }
         ]
       },
       {
-        "id": "what-is-oss",
-        "title": "What is Open Source Software (OSS)?",
+        "id": "what-is-python",
+        "title": "What is Python?",
         "slides": [
           {
             "type": "content",
-            "title": "What is Open Source Software (OSS)?",
+            "title": "What is Python?",
             "box": {
-              "content": "Software with <span class=\"highlight\">source code</span> that anyone can:",
+              "content": "A <span class=\"highlight\">high-level, interpreted</span> programming language designed for:",
               "list": [
                 {
-                  "emoji": "👀",
-                  "text": "<strong>Inspect</strong> - See how it works"
+                  "emoji": "📖",
+                  "text": "<strong>Readability</strong> - Clean, English-like syntax"
                 },
                 {
-                  "emoji": "✏️",
-                  "text": "<strong>Modify</strong> - Change and improve it"
+                  "emoji": "⚡",
+                  "text": "<strong>Rapid Development</strong> - Write less, do more"
                 },
                 {
                   "emoji": "🔄",
-                  "text": "<strong>Distribute</strong> - Share with others"
+                  "text": "<strong>Versatility</strong> - From web to AI to automation"
                 }
               ]
             },
             "note": {
-              "text": "<strong>Note:</strong> OSS ≠ FOSS (Free and Open Source Software)<br>OSS focuses on <em>open development</em>, FOSS emphasizes <em>user freedom</em>"
+              "text": "<strong>Created by:</strong> Guido van Rossum in 1991<br><strong>Named after:</strong> Monty Python's Flying Circus"
             }
           }
         ]
       },
       {
-        "id": "you-already-use-oss",
-        "title": "You Already Use OSS!",
+        "id": "why-python",
+        "title": "Why Python is Popular",
         "slides": [
           {
             "type": "topic-title",
-            "title": "You Already Use OSS!",
+            "title": "Why Python Dominates",
             "box": {
-              "content": "Open source is everywhere! Let's look at some examples you probably use daily..."
+              "content": "Python is the #1 language for beginners and the most in-demand for professionals"
             },
             "note": {
-              "text": "<span class=\"emoji\">💡</span> <strong>Fun Fact:</strong> Over 90% of modern applications contain OSS components!"
+              "text": "<span class=\"emoji\">📊</span> <strong>Fact:</strong> Used by Google, Netflix, NASA, Instagram, and Spotify"
             }
           },
           {
             "type": "content",
-            "emoji": "🐧",
-            "title": "Linux",
+            "emoji": "🚀",
+            "title": "Use Cases Everywhere",
             "box": {
-              "title": "What is it?",
-              "content": "The most popular open source operating system kernel"
-            },
-            "list": [
-              {
-                "emoji": "🌍",
-                "text": "Powers most web servers worldwide"
-              },
-              {
-                "emoji": "📱",
-                "text": "Foundation of Android OS"
-              },
-              {
-                "emoji": "☁️",
-                "text": "Runs on 90% of cloud infrastructure"
-              },
-              {
-                "emoji": "💻",
-                "text": "Free alternative to Windows/macOS"
-              }
-            ],
-            "note": {
-              "text": "Created by Linus Torvalds in 1991, now maintained by thousands of developers globally"
+              "title": "Where Python Shines",
+              "list": [
+                {
+                  "emoji": "🌐",
+                  "text": "<strong>Web Development</strong> - Django, Flask, FastAPI"
+                },
+                {
+                  "emoji": "📊",
+                  "text": "<strong>Data Science</strong> - Pandas, NumPy, Matplotlib"
+                },
+                {
+                  "emoji": "🤖",
+                  "text": "<strong>AI & ML</strong> - TensorFlow, PyTorch, scikit-learn"
+                },
+                {
+                  "emoji": "⚙️",
+                  "text": "<strong>Automation</strong> - Selenium, scripting, bots"
+                },
+                {
+                  "emoji": "🔌",
+                  "text": "<strong>IoT</strong> - Raspberry Pi, MicroPython, sensors"
+                },
+                {
+                  "emoji": "🎮",
+                  "text": "<strong>Game Dev</strong> - Pygame, Unity scripting"
+                }
+              ]
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "installation",
+        "title": "Getting Started",
+        "slides": [
           {
-            "type": "content",
-            "emoji": "🦊",
-            "title": "Firefox",
-            "box": {
-              "title": "What is it?",
-              "content": "Privacy-focused open source web browser"
-            },
-            "list": [
-              {
-                "emoji": "🔒",
-                "text": "Built with privacy as a core principle"
-              },
-              {
-                "emoji": "🛠️",
-                "text": "Highly customizable with extensions"
-              },
-              {
-                "emoji": "🌐",
-                "text": "Champions open web standards"
-              },
-              {
-                "emoji": "👥",
-                "text": "Community-driven development"
-              }
-            ],
-            "note": {
-              "text": "Developed by Mozilla Foundation, first released in 2004"
-            }
-          },
-          {
-            "type": "content",
-            "emoji": "📝",
-            "title": "WordPress",
-            "box": {
-              "title": "What is it?",
-              "content": "The world's most popular website builder and CMS"
-            },
-            "list": [
-              {
-                "emoji": "🌍",
-                "text": "Powers 43% of all websites on the internet"
-              },
-              {
-                "emoji": "🎨",
-                "text": "Thousands of free themes and plugins"
-              },
-              {
-                "emoji": "💼",
-                "text": "Powers everything from blogs to e-commerce"
-              },
-              {
-                "emoji": "👥",
-                "text": "Massive global community"
-              }
-            ],
-            "note": {
-              "text": "Started as a blogging platform in 2003, now a full CMS"
-            }
+            "type": "topic-title",
+            "title": "Setting Up Python"
           },
           {
             "type": "content",
             "emoji": "💻",
-            "title": "Visual Studio Code",
+            "title": "Installing Python",
             "box": {
-              "title": "What is it?",
-              "content": "Popular open source code editor by Microsoft"
+              "title": "Step-by-Step",
+              "list": [
+                {
+                  "emoji": "1️⃣",
+                  "text": "Visit <strong>python.org</strong>"
+                },
+                {
+                  "emoji": "2️⃣",
+                  "text": "Download Python 3.x (latest version)"
+                },
+                {
+                  "emoji": "3️⃣",
+                  "text": "Run installer - <strong>CHECK 'Add to PATH'</strong>"
+                },
+                {
+                  "emoji": "4️⃣",
+                  "text": "Verify: <code>python --version</code>"
+                }
+              ]
+            },
+            "note": {
+              "text": "<span class=\"emoji\">⚠️</span> Python 2 is deprecated. Always use Python 3.x"
+            }
+          },
+          {
+            "type": "content",
+            "emoji": "🛠️",
+            "title": "Development Tools",
+            "box": {
+              "title": "Recommended IDEs & Editors",
+              "list": [
+                {
+                  "emoji": "💙",
+                  "text": "<strong>VS Code</strong> - Lightweight, extensions"
+                },
+                {
+                  "emoji": "🐍",
+                  "text": "<strong>PyCharm</strong> - Full-featured Python IDE"
+                },
+                {
+                  "emoji": "📓",
+                  "text": "<strong>Jupyter Notebook</strong> - Data science favorite"
+                },
+                {
+                  "emoji": "🎯",
+                  "text": "<strong>IDLE</strong> - Built-in, simple for beginners"
+                }
+              ]
+            }
+          },
+          {
+            "type": "content",
+            "emoji": "👋",
+            "title": "Hello World",
+            "box": {
+              "content": "<strong>Your First Python Program</strong>",
+              "code": "print(\"Hello, World!\")"
             },
             "list": [
               {
-                "emoji": "🚀",
-                "text": "Most popular code editor among developers"
-              },
-              {
-                "emoji": "🔌",
-                "text": "Thousands of extensions available"
+                "emoji": "▶️",
+                "text": "Run in terminal: <code>python hello.py</code>"
               },
               {
                 "emoji": "🎯",
-                "text": "Supports almost every programming language"
-              },
-              {
-                "emoji": "⚡",
-                "text": "Fast, lightweight, and free"
+                "text": "Or interactive: <code>python</code> then type code"
               }
             ],
             "note": {
-              "text": "Released by Microsoft in 2015, built on Electron (also OSS!)"
+              "text": "<span class=\"emoji\">💡</span> That's it! No compilation, no boilerplate"
+            }
+          }
+        ]
+      },
+      {
+        "id": "syntax-basics",
+        "title": "Python Syntax",
+        "slides": [
+          {
+            "type": "topic-title",
+            "title": "Python Syntax Basics",
+            "box": {
+              "content": "Simple, readable, and strict about indentation"
             }
           },
           {
             "type": "content",
-            "emoji": "🔀",
-            "title": "Git",
+            "emoji": "📏",
+            "title": "Indentation Matters!",
             "box": {
-              "title": "What is it?",
-              "content": "The most popular version control system"
+              "content": "<strong>Python uses indentation to define code blocks</strong>",
+              "code": "if True:\n    print(\"Correct\")\nprint(\"Also correct\")"
             },
             "list": [
               {
-                "emoji": "📝",
-                "text": "Track changes in your code over time"
+                "emoji": "✅",
+                "text": "Use 4 spaces (standard)"
               },
               {
-                "emoji": "👥",
-                "text": "Collaborate with multiple developers"
+                "emoji": "❌",
+                "text": "Don't mix tabs and spaces"
               },
               {
-                "emoji": "🌿",
-                "text": "Work on features in separate branches"
-              },
-              {
-                "emoji": "⏪",
-                "text": "Roll back to previous versions anytime"
-              }
-            ],
-            "note": {
-              "text": "Created by Linus Torvalds in 2005, now the industry standard"
-            }
-          }
-        ]
-      },
-      {
-        "id": "getting-started-with-oss",
-        "title": "Getting Started with OSS",
-        "slides": [
-          {
-            "type": "topic-title",
-            "title": "Getting Started with OSS",
-            "box": {
-              "content": "Contributing to open source can be rewarding. Here's how you can start."
-            }
-          },
-          {
-            "type": "content",
-            "emoji": "🔍",
-            "title": "Finding a Project",
-            "box": {
-              "title": "Where to look?",
-              "list": [
-                {
-                  "emoji": "⭐",
-                  "text": "Explore projects on GitHub, GitLab, or Bitbucket."
-                },
-                {
-                  "emoji": "💡",
-                  "text": "Look for projects you already use and want to improve."
-                },
-                {
-                  "emoji": "🏷️",
-                  "text": "Search for issues with labels like \"good first issue\" or \"help wanted\"."
-                }
-              ]
-            }
-          },
-          {
-            "type": "content",
-            "emoji": "🤔",
-            "title": "What to Contribute?",
-            "box": {
-              "title": "It's not just about code!",
-              "list": [
-                {
-                  "emoji": "📖",
-                  "text": "Improve documentation."
-                },
-                {
-                  "emoji": "🐛",
-                  "text": "Report or fix bugs."
-                },
-                {
-                  "emoji": "💡",
-                  "text": "Suggest new features."
-                },
-                {
-                  "emoji": "🎨",
-                  "text": "Help with design."
-                }
-              ]
-            }
-          }
-        ]
-      },
-      {
-        "id": "oss-in-2025-and-beyond",
-        "title": "OSS in 2025 and Beyond",
-        "slides": [
-          {
-            "type": "topic-title",
-            "title": "OSS in 2025 and Beyond",
-            "box": {
-              "content": "The future of open source is bright and full of opportunities."
-            }
-          },
-          {
-            "type": "content",
-            "emoji": "🏢",
-            "title": "Companies Developing and Using OSS",
-            "box": {
-              "title": "Who is leading the charge?",
-              "list": [
-                {
-                  "emoji": "⭐",
-                  "text": "<strong>Google:</strong> Kubernetes, TensorFlow, Android"
-                },
-                {
-                  "emoji": "⭐",
-                  "text": "<strong>Microsoft:</strong> VS Code, .NET, TypeScript"
-                },
-                {
-                  "emoji": "⭐",
-                  "text": "<strong>Meta:</strong> React, PyTorch, GraphQL"
-                },
-                {
-                  "emoji": "⭐",
-                  "text": "<strong>Amazon:</strong> OpenSearch, AWS SDKs, Firecracker"
-                }
-              ]
-            }
-          },
-          {
-            "type": "content",
-            "emoji": "🚀",
-            "title": "The Future of OSS",
-            "box": {
-              "title": "What to expect?",
-              "list": [
-                {
-                  "emoji": "🤖",
-                  "text": "AI and Machine Learning will be dominated by OSS."
-                },
-                {
-                  "emoji": "🔒",
-                  "text": "Security and sustainability will be key focus areas."
-                },
-                {
-                  "emoji": "🌍",
-                  "text": "More diversity and inclusion in the community."
-                },
-                {
-                  "emoji": "💼",
-                  "text": "Open source will become the default for new software."
-                }
-              ]
-            }
-          }
-        ]
-      },
-      {
-        "id": "why-oss-matters",
-        "title": "Why Open Source Matters",
-        "slides": [
-          {
-            "type": "topic-title",
-            "title": "Why Open Source Matters"
-          },
-          {
-            "type": "content",
-            "title": "1. Innovation Through Collaboration",
-            "box": {
-              "content": "<span class=\"emoji\">🚀</span> <strong>Faster Development</strong>",
-              "list": [
-                "Thousands of developers working together worldwide",
-                "Problems get solved faster with diverse perspectives",
-                "Innovations happen at incredible speed",
-                "No need to reinvent the wheel - build on existing solutions"
-              ]
-            },
-            "note": {
-              "text": "<span class=\"emoji\">💡</span> Example: Linux kernel has 15,000+ contributors from 1,500+ companies"
-            }
-          },
-          {
-            "type": "content",
-            "title": "2. Enhanced Security",
-            "box": {
-              "content": "<span class=\"emoji\">🔒</span> <strong>\"Many Eyes Make Bugs Shallow\"</strong> - Linus's Law",
-              "list": [
-                "Anyone can review and audit the code",
-                "Vulnerabilities are found and fixed faster",
-                "No hidden backdoors or malicious code",
-                "Security researchers can proactively find issues"
-              ]
-            },
-            "note": {
-              "text": "<span class=\"emoji\">⚡</span> OSS projects often patch vulnerabilities faster than proprietary software"
-            }
-          },
-          {
-            "type": "content",
-            "title": "3. Cost-Effective & Accessible",
-            "box": {
-              "content": "<span class=\"emoji\">💰</span> <strong>Open Source = Open Access</strong>",
-              "list": [
-                "No licensing fees - source code is publicly available",
-                "Customize to fit your specific requirements",
-                "Avoid vendor lock-in with transparent codebases",
-                "Lower barriers to entry for individuals and organizations"
-              ]
-            },
-            "note": {
-              "text": "<span class=\"emoji\">📊</span> Organizations save significantly by using and contributing to OSS projects"
-            }
-          },
-          {
-            "type": "content",
-            "title": "4. Global Community & Learning",
-            "box": {
-              "content": "<span class=\"emoji\">🌍</span> <strong>Collaborate Across Borders</strong>",
-              "list": [
-                "Learn from experts worldwide",
-                "Join supportive communities of like-minded developers",
-                "Share knowledge and best practices",
-                "Contribute to projects that impact millions"
-              ]
-            },
-            "note": {
-              "text": "<span class=\"emoji\">🤝</span> GitHub alone has 100+ million developers collaborating on OSS"
-            }
-          },
-          {
-            "type": "content",
-            "title": "5. Transparency & Trust",
-            "box": {
-              "content": "<span class=\"emoji\">🎯</span> <strong>No Hidden Code, No Surprises</strong>",
-              "list": [
-                "See exactly what the software does",
-                "Verify privacy and data handling practices",
-                "No vendor lock-in or forced upgrades",
-                "Build trust through openness"
-              ]
-            },
-            "note": {
-              "text": "<span class=\"emoji\">🔍</span> Transparency builds trust - you know exactly what's running on your system"
-            }
-          }
-        ]
-      },
-      {
-        "id": "oss-licenses",
-        "title": "Understanding OSS Licenses",
-        "slides": [
-          {
-            "type": "topic-title",
-            "title": "Understanding OSS Licenses",
-            "box": {
-              "content": "How to identify open source software and what different licenses mean"
-            }
-          },
-          {
-            "type": "content",
-            "emoji": "🔍",
-            "title": "How to Tell if Software is Open Source",
-            "box": {
-              "content": "<span class=\"emoji\">✅</span> <strong>Look for These Signs</strong>",
-              "list": [
-                "LICENSE or LICENSE.txt file in the repository",
-                "Source code publicly available (GitHub, GitLab, etc.)",
-                "Clear license information in README or documentation",
-                "OSI (Open Source Initiative) approved license"
-              ]
-            },
-            "note": {
-              "text": "<span class=\"emoji\">💡</span> If there's no license, the code is NOT open source - it's copyrighted by default"
-            }
-          },
-          {
-            "type": "content",
-            "emoji": "📄",
-            "title": "MIT License",
-            "box": {
-              "title": "Simple and Permissive",
-              "content": "The most popular open source license",
-              "list": [
-                {
-                  "emoji": "✅",
-                  "text": "Use commercially without restrictions"
-                },
-                {
-                  "emoji": "✅",
-                  "text": "Modify and distribute freely"
-                },
-                {
-                  "emoji": "✅",
-                  "text": "No requirement to share modifications"
-                },
-                {
-                  "emoji": "⚠️",
-                  "text": "No warranty - use at your own risk"
-                }
-              ]
-            },
-            "note": {
-              "text": "<span class=\"emoji\">🌟</span> Used by: React, jQuery, Node.js, Rails"
-            }
-          },
-          {
-            "type": "content",
-            "emoji": "🚀",
-            "title": "Apache License 2.0",
-            "box": {
-              "title": "Permissive with Patent Protection",
-              "content": "Popular for large projects and enterprise use",
-              "list": [
-                {
-                  "emoji": "✅",
-                  "text": "Similar freedoms to MIT"
-                },
-                {
-                  "emoji": "🛡️",
-                  "text": "Includes patent protection grants"
-                },
-                {
-                  "emoji": "📝",
-                  "text": "Requires attribution and change documentation"
-                },
-                {
-                  "emoji": "⚖️",
-                  "text": "More detailed legal terms"
-                }
-              ]
-            },
-            "note": {
-              "text": "<span class=\"emoji\">🌟</span> Used by: Android, Kubernetes, Apache HTTP Server"
-            }
-          },
-          {
-            "type": "content",
-            "emoji": "🔄",
-            "title": "GNU GPL (General Public License)",
-            "box": {
-              "title": "Copyleft License",
-              "content": "Ensures derivative works remain open source",
-              "list": [
-                {
-                  "emoji": "✅",
-                  "text": "Use and modify freely"
-                },
-                {
-                  "emoji": "🔗",
-                  "text": "Derivative works must use GPL too (copyleft)"
-                },
-                {
-                  "emoji": "📤",
-                  "text": "Must share source code of modifications"
-                },
-                {
-                  "emoji": "⚠️",
-                  "text": "Can complicate commercial use"
-                }
-              ]
-            },
-            "note": {
-              "text": "<span class=\"emoji\">🌟</span> Used by: Linux kernel, Git, WordPress"
-            }
-          },
-          {
-            "type": "content",
-            "emoji": "🎓",
-            "title": "BSD License (Berkeley Software Distribution)",
-            "box": {
-              "title": "Very Permissive",
-              "content": "Minimal restrictions, similar to MIT",
-              "list": [
-                {
-                  "emoji": "✅",
-                  "text": "Use, modify, distribute freely"
-                },
-                {
-                  "emoji": "✅",
-                  "text": "Commercial use allowed"
-                },
-                {
-                  "emoji": "📝",
-                  "text": "Must include copyright notice"
-                },
-                {
-                  "emoji": "🆓",
-                  "text": "No copyleft - can relicense"
-                }
-              ]
-            },
-            "note": {
-              "text": "<span class=\"emoji\">🌟</span> Used by: FreeBSD, OpenBSD, many networking tools"
-            }
-          },
-          {
-            "type": "content",
-            "emoji": "💡",
-            "title": "Choosing a License",
-            "box": {
-              "content": "<span class=\"emoji\">🤔</span> <strong>Quick Guide</strong>",
-              "list": [
-                "Want simple and permissive? → MIT or BSD",
-                "Need patent protection? → Apache 2.0",
-                "Want derivatives to stay open? → GPL",
-                "Not sure? → MIT is a safe default choice"
-              ]
-            },
-            "note": {
-              "text": "<span class=\"emoji\">🔗</span> Visit choosealicense.com for an interactive guide"
-            }
-          }
-        ]
-      },
-      {
-        "id": "hands-on-exercise",
-        "title": "Hands-On Exercise: Making Your First Contribution",
-        "slides": [
-          {
-            "type": "topic-title",
-            "title": "Hands-On Exercise",
-            "box": {
-              "content": "Let's practice creating and reviewing pull requests together!"
-            }
-          },
-          {
-            "type": "content",
-            "emoji": "🗺️",
-            "title": "Contribution Workflow",
-            "box": {
-              "content": "<span class=\"emoji\">📊</span> <strong>From Idea to Merged Code</strong>"
-            },
-            "list": [
-              {
-                "emoji": "1️⃣",
-                "text": "Find a project & issue → <em>Choose what to work on</em>"
-              },
-              {
-                "emoji": "2️⃣",
-                "text": "Fork the repository → <em>Create your own copy</em>"
-              },
-              {
-                "emoji": "3️⃣",
-                "text": "Clone to local machine → <em>Download to your computer</em>"
-              },
-              {
-                "emoji": "4️⃣",
-                "text": "Create a new branch → <em>Work in isolation</em>"
-              },
-              {
-                "emoji": "5️⃣",
-                "text": "Make your changes → <em>Code, document, test</em>"
-              },
-              {
-                "emoji": "6️⃣",
-                "text": "Commit & push → <em>Save and upload changes</em>"
-              },
-              {
-                "emoji": "7️⃣",
-                "text": "Create Pull Request → <em>Propose your changes</em>"
-              },
-              {
-                "emoji": "8️⃣",
-                "text": "Review & iterate → <em>Respond to feedback</em>"
-              },
-              {
-                "emoji": "9️⃣",
-                "text": "Merged! → <em>Your code is now part of the project!</em>"
+                "emoji": "⚠️",
+                "text": "Indentation errors break code"
               }
             ]
           },
           {
             "type": "content",
-            "emoji": "🔀",
-            "title": "Creating a Pull Request (PR)",
+            "emoji": "📝",
+            "title": "Variables & Types",
             "box": {
-              "title": "Step-by-Step Guide",
-              "list": [
-                {
-                  "emoji": "1️⃣",
-                  "text": "<strong>Fork & Clone</strong> - Get the code locally"
-                },
-                {
-                  "emoji": "2️⃣",
-                  "text": "<strong>Create branch</strong> - <code>git checkout -b fix-typo</code>"
-                },
-                {
-                  "emoji": "3️⃣",
-                  "text": "<strong>Make changes</strong> - Edit files, add tests"
-                },
-                {
-                  "emoji": "4️⃣",
-                  "text": "<strong>Commit</strong> - <code>git commit -m \"Fix typo in README\"</code>"
-                },
-                {
-                  "emoji": "5️⃣",
-                  "text": "<strong>Push</strong> - <code>git push origin fix-typo</code>"
-                },
-                {
-                  "emoji": "6️⃣",
-                  "text": "<strong>Open PR</strong> - Go to GitHub, click 'New Pull Request'"
-                },
-                {
-                  "emoji": "7️⃣",
-                  "text": "<strong>Describe changes</strong> - Clear title & description"
-                }
-              ]
+              "content": "<strong>Dynamic typing - no declaration needed</strong>",
+              "code": "age = 25          # int\nname = 'John'     # str\nprice = 19.99     # float\nis_active = True  # bool"
             },
             "note": {
-              "text": "<span class=\"emoji\">💡</span> <strong>Tip:</strong> Reference issue numbers in PR description (e.g., 'Fixes #123')"
+              "text": "<span class=\"emoji\">🔄</span> Variables can change type anytime"
             }
+          }
+        ]
+      },
+      {
+        "id": "data-types",
+        "title": "Data Types",
+        "slides": [
+          {
+            "type": "topic-title",
+            "title": "Core Data Types"
+          },
+          {
+            "type": "content",
+            "emoji": "🔢",
+            "title": "Numbers",
+            "box": {
+              "title": "int, float, complex",
+              "code": "x = 10           # int\ny = 3.14         # float\nz = 2 + 3j       # complex"
+            },
+            "list": [
+              {
+                "emoji": "➕",
+                "text": "Arithmetic: +, -, *, /, //, %, **"
+              },
+              {
+                "emoji": "🔄",
+                "text": "Convert: int(), float(), str()"
+              }
+            ]
           },
           {
             "type": "content",
             "emoji": "📝",
-            "title": "Writing a Good PR Description",
+            "title": "Strings",
             "box": {
-              "content": "<span class=\"emoji\">✍️</span> <strong>Make it Easy to Review</strong>",
-              "list": [
-                {
-                  "emoji": "📌",
-                  "text": "<strong>Clear title</strong> - Summarize the change in one line"
-                },
-                {
-                  "emoji": "📋",
-                  "text": "<strong>What & Why</strong> - Explain what you changed and why"
-                },
-                {
-                  "emoji": "🧪",
-                  "text": "<strong>How to test</strong> - Steps to verify your changes work"
-                },
-                {
-                  "emoji": "📸",
-                  "text": "<strong>Screenshots</strong> - If UI changes, show before/after"
-                },
-                {
-                  "emoji": "🔗",
-                  "text": "<strong>Related issues</strong> - Link to issue being fixed"
-                }
-              ]
+              "title": "Text handling",
+              "code": "name = 'Python'\nquote = \"It's awesome\"\nmulti = '''Multiple\nlines'''\nformatted = f\"Hello {name}\""
+            },
+            "list": [
+              {
+                "emoji": "✂️",
+                "text": "Slicing: <code>name[0:3]</code>"
+              },
+              {
+                "emoji": "🔧",
+                "text": "Methods: .upper(), .lower(), .strip()"
+              }
+            ]
+          },
+          {
+            "type": "content",
+            "emoji": "📋",
+            "title": "Lists",
+            "box": {
+              "title": "Ordered, mutable collections",
+              "code": "fruits = ['apple', 'banana', 'cherry']\nfruits.append('orange')\nfruits[0] = 'mango'\nprint(fruits[1:3])"
+            },
+            "list": [
+              {
+                "emoji": "➕",
+                "text": "Add: .append(), .insert()"
+              },
+              {
+                "emoji": "➖",
+                "text": "Remove: .pop(), .remove()"
+              }
+            ]
+          },
+          {
+            "type": "content",
+            "emoji": "🎯",
+            "title": "Tuples",
+            "box": {
+              "title": "Ordered, immutable",
+              "code": "coords = (10, 20)\nx, y = coords  # unpacking\n# coords[0] = 5  # Error!"
             },
             "note": {
-              "text": "<span class=\"emoji\">🎯</span> Good PR descriptions help reviewers understand your work faster"
+              "text": "<span class=\"emoji\">🔒</span> Use tuples when data shouldn't change"
             }
           },
           {
             "type": "content",
-            "emoji": "👀",
-            "title": "Reviewing a Pull Request",
+            "emoji": "🗂️",
+            "title": "Dictionaries",
             "box": {
-              "title": "How to Be a Helpful Reviewer",
+              "title": "Key-value pairs",
+              "code": "person = {\n    'name': 'John',\n    'age': 30,\n    'city': 'NYC'\n}\nprint(person['name'])\nperson['job'] = 'Developer'"
+            },
+            "list": [
+              {
+                "emoji": "🔑",
+                "text": "Access: dict['key']"
+              },
+              {
+                "emoji": "🔄",
+                "text": "Methods: .keys(), .values(), .items()"
+              }
+            ]
+          },
+          {
+            "type": "content",
+            "emoji": "🎲",
+            "title": "Sets",
+            "box": {
+              "title": "Unordered, unique items",
+              "code": "numbers = {1, 2, 3, 3, 2}\nprint(numbers)  # {1, 2, 3}\nnumbers.add(4)"
+            },
+            "list": [
+              {
+                "emoji": "➕",
+                "text": "Union: set1 | set2"
+              },
+              {
+                "emoji": "∩",
+                "text": "Intersection: set1 & set2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "control-flow",
+        "title": "Control Flow",
+        "slides": [
+          {
+            "type": "topic-title",
+            "title": "Decision Making & Loops"
+          },
+          {
+            "type": "content",
+            "emoji": "🔀",
+            "title": "Conditional Statements",
+            "box": {
+              "code": "age = 18\nif age >= 18:\n    print(\"Adult\")\nelif age >= 13:\n    print(\"Teen\")\nelse:\n    print(\"Child\")"
+            },
+            "list": [
+              {
+                "emoji": "⚖️",
+                "text": "Comparisons: ==, !=, <, >, <=, >="
+              },
+              {
+                "emoji": "🔗",
+                "text": "Logical: and, or, not"
+              }
+            ]
+          },
+          {
+            "type": "content",
+            "emoji": "🔁",
+            "title": "For Loop",
+            "box": {
+              "title": "Iterate over sequences",
+              "code": "for i in range(5):\n    print(i)\n\nfor fruit in ['apple', 'banana']:\n    print(fruit)"
+            },
+            "note": {
+              "text": "<span class=\"emoji\">🎯</span> range(5) generates 0, 1, 2, 3, 4"
+            }
+          },
+          {
+            "type": "content",
+            "emoji": "🔄",
+            "title": "While Loop",
+            "box": {
+              "title": "Loop until condition is false",
+              "code": "count = 0\nwhile count < 5:\n    print(count)\n    count += 1"
+            },
+            "list": [
+              {
+                "emoji": "⛔",
+                "text": "<strong>break</strong> - Exit loop"
+              },
+              {
+                "emoji": "⏭️",
+                "text": "<strong>continue</strong> - Skip iteration"
+              },
+              {
+                "emoji": "➡️",
+                "text": "<strong>pass</strong> - Do nothing placeholder"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "functions",
+        "title": "Functions",
+        "slides": [
+          {
+            "type": "topic-title",
+            "title": "Reusable Code Blocks"
+          },
+          {
+            "type": "content",
+            "emoji": "⚙️",
+            "title": "Defining Functions",
+            "box": {
+              "code": "def greet(name):\n    return f\"Hello, {name}!\"\n\nresult = greet(\"Python\")\nprint(result)"
+            },
+            "list": [
+              {
+                "emoji": "📥",
+                "text": "Parameters: def func(param1, param2)"
+              },
+              {
+                "emoji": "📤",
+                "text": "Return values: return value"
+              },
+              {
+                "emoji": "🎯",
+                "text": "Default args: def func(x=10)"
+              }
+            ]
+          },
+          {
+            "type": "content",
+            "emoji": "🎛️",
+            "title": "Advanced Arguments",
+            "box": {
+              "code": "def info(name, age=25, *hobbies, **details):\n    print(f\"{name}, {age}\")\n    print(hobbies)\n    print(details)\n\ninfo(\"John\", 30, \"coding\", \"gaming\", city=\"NYC\")"
+            },
+            "list": [
+              {
+                "emoji": "📦",
+                "text": "<strong>*args</strong> - Variable positional"
+              },
+              {
+                "emoji": "🗂️",
+                "text": "<strong>**kwargs</strong> - Variable keyword"
+              }
+            ]
+          },
+          {
+            "type": "content",
+            "emoji": "⚡",
+            "title": "Lambda Functions",
+            "box": {
+              "title": "Anonymous one-liners",
+              "code": "square = lambda x: x ** 2\nprint(square(5))  # 25\n\nnumbers = [1, 2, 3, 4]\nsquared = list(map(lambda x: x**2, numbers))"
+            },
+            "note": {
+              "text": "<span class=\"emoji\">💡</span> Use for simple operations only"
+            }
+          }
+        ]
+      },
+      {
+        "id": "modules",
+        "title": "Modules & Packages",
+        "slides": [
+          {
+            "type": "topic-title",
+            "title": "Code Organization"
+          },
+          {
+            "type": "content",
+            "emoji": "📦",
+            "title": "Importing Modules",
+            "box": {
+              "code": "import math\nprint(math.pi)\n\nfrom datetime import datetime\nprint(datetime.now())\n\nimport random as rnd\nprint(rnd.randint(1, 10))"
+            },
+            "list": [
+              {
+                "emoji": "📚",
+                "text": "Built-in: math, random, os, sys, json"
+              },
+              {
+                "emoji": "🔧",
+                "text": "Your own: create .py file, import it"
+              }
+            ]
+          },
+          {
+            "type": "content",
+            "emoji": "🎯",
+            "title": "pip - Package Manager",
+            "box": {
+              "code": "# Install packages\npip install requests\npip install pandas numpy\n\n# List installed\npip list\n\n# Uninstall\npip uninstall package_name"
+            },
+            "note": {
+              "text": "<span class=\"emoji\">🌐</span> PyPI has 500,000+ packages available"
+            }
+          },
+          {
+            "type": "content",
+            "emoji": "🏠",
+            "title": "Virtual Environments",
+            "box": {
+              "title": "Isolate project dependencies",
+              "code": "# Create\npython -m venv myenv\n\n# Activate (Windows)\nmyenv\\Scripts\\activate\n\n# Activate (Mac/Linux)\nsource myenv/bin/activate\n\n# Deactivate\ndeactivate"
+            },
+            "note": {
+              "text": "<span class=\"emoji\">⚠️</span> Always use venv for projects"
+            }
+          }
+        ]
+      },
+      {
+        "id": "error-handling",
+        "title": "Error Handling",
+        "slides": [
+          {
+            "type": "content",
+            "emoji": "🛡️",
+            "title": "Try-Except",
+            "box": {
+              "code": "try:\n    num = int(input(\"Enter number: \"))\n    result = 10 / num\nexcept ValueError:\n    print(\"Invalid number\")\nexcept ZeroDivisionError:\n    print(\"Cannot divide by zero\")\nfinally:\n    print(\"Done\")"
+            },
+            "list": [
+              {
+                "emoji": "🎯",
+                "text": "Catch specific exceptions"
+              },
+              {
+                "emoji": "🔄",
+                "text": "finally: always executes"
+              },
+              {
+                "emoji": "🚨",
+                "text": "raise: create custom errors"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "file-handling",
+        "title": "File Handling",
+        "slides": [
+          {
+            "type": "content",
+            "emoji": "📁",
+            "title": "Reading & Writing Files",
+            "box": {
+              "code": "# Write\nwith open('data.txt', 'w') as f:\n    f.write(\"Hello, File!\")\n\n# Read\nwith open('data.txt', 'r') as f:\n    content = f.read()\n    print(content)"
+            },
+            "list": [
+              {
+                "emoji": "✍️",
+                "text": "'w' - Write (overwrite)"
+              },
+              {
+                "emoji": "📖",
+                "text": "'r' - Read"
+              },
+              {
+                "emoji": "➕",
+                "text": "'a' - Append"
+              }
+            ],
+            "note": {
+              "text": "<span class=\"emoji\">💡</span> 'with' auto-closes file"
+            }
+          }
+        ]
+      },
+      {
+        "id": "oop",
+        "title": "Object-Oriented Programming",
+        "slides": [
+          {
+            "type": "topic-title",
+            "title": "OOP in Python"
+          },
+          {
+            "type": "content",
+            "emoji": "🏗️",
+            "title": "Classes & Objects",
+            "box": {
+              "code": "class Car:\n    def __init__(self, brand, model):\n        self.brand = brand\n        self.model = model\n    \n    def drive(self):\n        print(f\"{self.brand} {self.model} is driving\")\n\nmy_car = Car(\"Tesla\", \"Model 3\")\nmy_car.drive()"
+            },
+            "list": [
+              {
+                "emoji": "🎯",
+                "text": "__init__: Constructor"
+              },
+              {
+                "emoji": "📌",
+                "text": "self: Instance reference"
+              }
+            ]
+          },
+          {
+            "type": "content",
+            "emoji": "🔗",
+            "title": "Inheritance",
+            "box": {
+              "code": "class ElectricCar(Car):\n    def __init__(self, brand, model, battery):\n        super().__init__(brand, model)\n        self.battery = battery\n    \n    def charge(self):\n        print(\"Charging...\")\n\ntesla = ElectricCar(\"Tesla\", \"S\", \"100kWh\")"
+            }
+          }
+        ]
+      },
+      {
+        "id": "popular-libraries",
+        "title": "Popular Libraries",
+        "slides": [
+          {
+            "type": "topic-title",
+            "title": "Python Ecosystem"
+          },
+          {
+            "type": "content",
+            "emoji": "🌐",
+            "title": "Web Development",
+            "box": {
               "list": [
                 {
-                  "emoji": "📖",
-                  "text": "<strong>Read the description</strong> - Understand the goal"
+                  "emoji": "🎯",
+                  "text": "<strong>Django</strong> - Full-featured web framework"
                 },
                 {
-                  "emoji": "🔍",
-                  "text": "<strong>Check the code</strong> - Look for bugs, style issues"
+                  "emoji": "⚡",
+                  "text": "<strong>Flask</strong> - Lightweight, flexible"
+                },
+                {
+                  "emoji": "🚀",
+                  "text": "<strong>FastAPI</strong> - Modern, fast APIs"
+                }
+              ]
+            }
+          },
+          {
+            "type": "content",
+            "emoji": "📊",
+            "title": "Data Science",
+            "box": {
+              "list": [
+                {
+                  "emoji": "🐼",
+                  "text": "<strong>Pandas</strong> - Data manipulation"
+                },
+                {
+                  "emoji": "🔢",
+                  "text": "<strong>NumPy</strong> - Numerical computing"
+                },
+                {
+                  "emoji": "📈",
+                  "text": "<strong>Matplotlib</strong> - Visualization"
+                },
+                {
+                  "emoji": "📓",
+                  "text": "<strong>Jupyter</strong> - Interactive notebooks"
+                }
+              ]
+            }
+          },
+          {
+            "type": "content",
+            "emoji": "🤖",
+            "title": "AI & Machine Learning",
+            "box": {
+              "list": [
+                {
+                  "emoji": "🧠",
+                  "text": "<strong>TensorFlow</strong> - Deep learning by Google"
+                },
+                {
+                  "emoji": "🔥",
+                  "text": "<strong>PyTorch</strong> - Deep learning by Meta"
+                },
+                {
+                  "emoji": "📚",
+                  "text": "<strong>scikit-learn</strong> - ML algorithms"
+                },
+                {
+                  "emoji": "🗣️",
+                  "text": "<strong>Transformers</strong> - NLP models"
+                }
+              ]
+            }
+          },
+          {
+            "type": "content",
+            "emoji": "⚙️",
+            "title": "Automation & Testing",
+            "box": {
+              "list": [
+                {
+                  "emoji": "🌐",
+                  "text": "<strong>Selenium</strong> - Browser automation"
                 },
                 {
                   "emoji": "🧪",
-                  "text": "<strong>Test it</strong> - Pull the branch and try it locally"
+                  "text": "<strong>pytest</strong> - Testing framework"
                 },
                 {
-                  "emoji": "💬",
-                  "text": "<strong>Leave comments</strong> - Be specific and constructive"
+                  "emoji": "🤖",
+                  "text": "<strong>Requests</strong> - HTTP library"
+                },
+                {
+                  "emoji": "🕷️",
+                  "text": "<strong>BeautifulSoup</strong> - Web scraping"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "best-practices",
+        "title": "Best Practices",
+        "slides": [
+          {
+            "type": "topic-title",
+            "title": "Writing Clean Python Code"
+          },
+          {
+            "type": "content",
+            "emoji": "📖",
+            "title": "PEP 8 Style Guide",
+            "box": {
+              "content": "<strong>Python's official style guide</strong>",
+              "list": [
+                {
+                  "emoji": "✅",
+                  "text": "4 spaces for indentation"
                 },
                 {
                   "emoji": "✅",
-                  "text": "<strong>Approve or request changes</strong> - Clear feedback"
+                  "text": "snake_case for variables/functions"
+                },
+                {
+                  "emoji": "✅",
+                  "text": "PascalCase for classes"
+                },
+                {
+                  "emoji": "✅",
+                  "text": "Max line length: 79 characters"
+                },
+                {
+                  "emoji": "✅",
+                  "text": "Use docstrings for documentation"
                 }
               ]
-            },
-            "note": {
-              "text": "<span class=\"emoji\">💡</span> <strong>Remember:</strong> Be kind, be specific, and focus on the code, not the person"
             }
           },
           {
             "type": "content",
-            "emoji": "💬",
-            "title": "PR Review Best Practices",
+            "emoji": "🔍",
+            "title": "Debugging Tips",
             "box": {
-              "content": "<span class=\"emoji\">🤝</span> <strong>Constructive Communication</strong>",
-              "list": [
-                "✅ \"Consider using a map here for better performance\"",
-                "✅ \"This might break on edge case X, let's add a test\"",
-                "✅ \"Nice solution! Could we add a comment explaining why?\"",
-                "❌ \"This is wrong\"",
-                "❌ \"Why would you do it this way?\"",
-                "❌ \"This code is terrible\""
-              ]
-            },
-            "note": {
-              "text": "<span class=\"emoji\">🌟</span> <strong>Golden Rule:</strong> Review code as you'd want yours reviewed - with respect and helpfulness"
-            }
-          },
-          {
-            "type": "content",
-            "emoji": "🎓",
-            "title": "Practice Time!",
-            "box": {
-              "content": "<span class=\"emoji\">🚀</span> <strong>Let's Try It Together</strong>",
               "list": [
                 {
-                  "emoji": "🔗",
-                  "text": "Visit: <strong>github.com/budeglobalenterprise/bude-first-contribution</strong>"
+                  "emoji": "🖨️",
+                  "text": "print() debugging - simple & effective"
+                },
+                {
+                  "emoji": "🐛",
+                  "text": "pdb module - Python debugger"
+                },
+                {
+                  "emoji": "💻",
+                  "text": "IDE debugger - breakpoints, step through"
                 },
                 {
                   "emoji": "📝",
-                  "text": "Follow the tutorial to make your first PR"
-                },
-                {
-                  "emoji": "👥",
-                  "text": "Practice the full workflow in a safe environment"
-                },
-                {
-                  "emoji": "🎉",
-                  "text": "Get your first contribution merged!"
+                  "text": "Logging - better than print for production"
                 }
               ]
-            },
-            "note": {
-              "text": "<span class=\"emoji\">💡</span> This is a beginner-friendly repository designed for practicing!"
+            }
+          }
+        ]
+      },
+      {
+        "id": "real-world",
+        "title": "Real-World Python",
+        "slides": [
+          {
+            "type": "topic-title",
+            "title": "Python in Industry"
+          },
+          {
+            "type": "content",
+            "emoji": "💼",
+            "title": "Career Paths",
+            "box": {
+              "list": [
+                {
+                  "emoji": "🌐",
+                  "text": "<strong>Backend Developer</strong> - APIs, databases"
+                },
+                {
+                  "emoji": "📊",
+                  "text": "<strong>Data Analyst</strong> - Business insights"
+                },
+                {
+                  "emoji": "🤖",
+                  "text": "<strong>ML Engineer</strong> - AI model deployment"
+                },
+                {
+                  "emoji": "🔬",
+                  "text": "<strong>Data Scientist</strong> - Predictive analytics"
+                },
+                {
+                  "emoji": "⚙️",
+                  "text": "<strong>DevOps Engineer</strong> - Automation, CI/CD"
+                },
+                {
+                  "emoji": "🔒",
+                  "text": "<strong>Security Analyst</strong> - Penetration testing"
+                }
+              ]
+            }
+          },
+          {
+            "type": "content",
+            "emoji": "🏢",
+            "title": "Companies Using Python",
+            "box": {
+              "list": [
+                {
+                  "emoji": "🔍",
+                  "text": "<strong>Google</strong> - Core infrastructure"
+                },
+                {
+                  "emoji": "📺",
+                  "text": "<strong>Netflix</strong> - Data analysis"
+                },
+                {
+                  "emoji": "📷",
+                  "text": "<strong>Instagram</strong> - Backend (Django)"
+                },
+                {
+                  "emoji": "🎵",
+                  "text": "<strong>Spotify</strong> - Recommendations"
+                },
+                {
+                  "emoji": "🚗",
+                  "text": "<strong>Tesla</strong> - Autopilot systems"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "project-ideas",
+        "title": "Mini Projects",
+        "slides": [
+          {
+            "type": "content",
+            "emoji": "🎯",
+            "title": "Beginner Projects",
+            "box": {
+              "list": [
+                {
+                  "emoji": "✅",
+                  "text": "<strong>Todo CLI</strong> - Task manager in terminal"
+                },
+                {
+                  "emoji": "🔢",
+                  "text": "<strong>Calculator</strong> - GUI with tkinter"
+                },
+                {
+                  "emoji": "🎲",
+                  "text": "<strong>Number Guessing Game</strong> - Basic logic"
+                },
+                {
+                  "emoji": "📝",
+                  "text": "<strong>Password Generator</strong> - Random + secure"
+                }
+              ]
+            }
+          },
+          {
+            "type": "content",
+            "emoji": "🚀",
+            "title": "Intermediate Projects",
+            "box": {
+              "list": [
+                {
+                  "emoji": "🕷️",
+                  "text": "<strong>Web Scraper</strong> - Extract data from websites"
+                },
+                {
+                  "emoji": "🌤️",
+                  "text": "<strong>Weather App</strong> - API integration"
+                },
+                {
+                  "emoji": "📊",
+                  "text": "<strong>Expense Tracker</strong> - SQLite database"
+                },
+                {
+                  "emoji": "🤖",
+                  "text": "<strong>Automation Bot</strong> - Email/file automation"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "resources",
+        "title": "Learning Resources",
+        "slides": [
+          {
+            "type": "content",
+            "emoji": "📚",
+            "title": "Where to Learn",
+            "box": {
+              "list": [
+                {
+                  "emoji": "📖",
+                  "text": "<strong>Official Docs</strong> - docs.python.org"
+                },
+                {
+                  "emoji": "🎥",
+                  "text": "<strong>YouTube</strong> - Corey Schafer, Tech With Tim"
+                },
+                {
+                  "emoji": "💻",
+                  "text": "<strong>Interactive</strong> - Codecademy, DataCamp"
+                },
+                {
+                  "emoji": "📝",
+                  "text": "<strong>Practice</strong> - LeetCode, HackerRank"
+                },
+                {
+                  "emoji": "📕",
+                  "text": "<strong>Books</strong> - \"Automate the Boring Stuff\""
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "quiz",
+        "title": "Quick Quiz",
+        "slides": [
+          {
+            "type": "content",
+            "emoji": "🧠",
+            "title": "Test Your Knowledge",
+            "box": {
+              "list": [
+                {
+                  "emoji": "1️⃣",
+                  "text": "What's the output of: <code>print(type([]))</code>"
+                },
+                {
+                  "emoji": "2️⃣",
+                  "text": "Difference between list and tuple?"
+                },
+                {
+                  "emoji": "3️⃣",
+                  "text": "What does 'self' represent in classes?"
+                },
+                {
+                  "emoji": "4️⃣",
+                  "text": "How to install external packages?"
+                },
+                {
+                  "emoji": "5️⃣",
+                  "text": "What's PEP 8?"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "summary",
+        "title": "Summary",
+        "slides": [
+          {
+            "type": "content",
+            "emoji": "📝",
+            "title": "Key Takeaways",
+            "box": {
+              "list": [
+                {
+                  "emoji": "🐍",
+                  "text": "Python: readable, versatile, beginner-friendly"
+                },
+                {
+                  "emoji": "📦",
+                  "text": "Rich ecosystem: libraries for everything"
+                },
+                {
+                  "emoji": "🔧",
+                  "text": "Practical: web, data, AI, automation"
+                },
+                {
+                  "emoji": "💼",
+                  "text": "Career-ready: high demand globally"
+                },
+                {
+                  "emoji": "🌱",
+                  "text": "Start small: practice daily, build projects"
+                }
+              ]
             }
           }
         ]
@@ -826,19 +1040,19 @@
         "slides": [
           {
             "type": "qa",
-            "title": "Let's Chat! 💬",
-            "content": "Got questions? Confused about something?<br><span class=\"gradient-accent\">No question is too basic!</span>"
+            "title": "Questions? 💬",
+            "content": "Let's discuss Python, projects, or career paths!<br><span class=\"gradient-accent\">No question is too basic!</span>"
           },
           {
             "type": "thank-you",
-            "title": "Thanks for hanging out! 🎉",
+            "title": "Thank You! 🎉",
             "box": {
-              "content": "<span class=\"emoji\">🚀</span> Ready to make your first contribution?<br><span class=\"gradient-accent\">We'll be cheering you on!</span>",
-              "note": "Find us online • Join the community • Ship some code"
+              "content": "<span class=\"emoji\">🐍</span> Ready to code in Python?<br><span class=\"gradient-accent\">Start building something today!</span>",
+              "note": "Practice • Build Projects • Join Community"
             },
             "footer": {
               "org": "Bude Global Enterprise - India",
-              "tagline": "Your friendly neighborhood OSS community"
+              "tagline": "Empowering developers worldwide"
             }
           }
         ]

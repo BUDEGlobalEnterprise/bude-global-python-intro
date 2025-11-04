@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/reveal.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/theme/black.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/plugin/highlight/monokai.min.css">
     <style>
         /* BUDE Brand Font */
         @font-face {
@@ -338,6 +339,7 @@
         <p>© 2025 Bude Global Enterprise — Built with ❤️ for Open Collaboration</p>
     </footer>
    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/plugin/highlight/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/reveal.min.js"></script>
     <script>
         async function loadSlides() {
@@ -394,7 +396,8 @@
                             }
                             Reveal.up(); // Navigate to previous slide if at top
                         }
-                    }
+                    },
+                    plugins: [ RevealHighlight ]
                 });
 
                 // Hide watermark on title slides
@@ -523,6 +526,10 @@
 
             if (boxData.content) {
                 html += `<p>${boxData.content}</p>`;
+            }
+
+            if (boxData.code) {
+                html += `<pre><code class="language-python">${boxData.code.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</code></pre>`;
             }
 
             if (boxData.list) {
